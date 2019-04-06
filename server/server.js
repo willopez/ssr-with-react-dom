@@ -21,6 +21,10 @@ const searchInputProps = {
 	dataField: ['original_title'],
 	placeholder: 'Search...',
 	URLParams: true,
+	autosuggest: false,
+	react: {
+		and: ['q']
+	}
 };
 
 const reactiveListProps = {
@@ -30,7 +34,7 @@ const reactiveListProps = {
 	size: 10,
 	renderData: data => <BookCard key={data._id} data={data} />,
 	react: {
-		and: ['q'],
+		and: ['SearchSensor'],
 	},
 };
 

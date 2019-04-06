@@ -21,6 +21,10 @@ const searchInputProps = {
 	dataField: ['original_title'],
 	placeholder: 'Search...',
 	URLParams: true,
+	autosuggest: false,
+	react: {
+		and: ['q']
+	}
 };
 
 const reactiveListProps = {
